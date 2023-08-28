@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Theme Toggle</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="red-theme">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">RAINBOW theme 2.0</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <button class="btn red-theme-btn mx-1" onclick="setTheme('red-theme')">Red</button>
+      </li>
+      <li class="nav-item">
+        <button class="btn orange-theme-btn mx-1" onclick="setTheme('orange-theme')">Orange</button>
+      </li>
+      <li class="nav-item">
+        <button class="btn yellow-theme-btn mx-1" onclick="setTheme('yellow-theme')">Yellow</button>
+      </li>
+      <li class="nav-item">
+        <button class="btn green-theme-btn mx-1" onclick="setTheme('green-theme')">Green</button>
+      </li>
+      <li class="nav-item">
+        <button class="btn blue-theme-btn mx-1" onclick="setTheme('blue-theme')">Blue</button>
+      </li>
+      <li class="nav-item">
+        <button class="btn indigo-theme-btn mx-1" onclick="setTheme('indigo-theme')">Indigo</button>
+      </li>
+      <li class="nav-item">
+        <button class="btn violet-theme-btn mx-1" onclick="setTheme('violet-theme')">Violet</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section class="container mt-5">
+  <article class="blog-post">
+      <h2>Welcome to Felix IT's</h2>
+      <p class="date">Training Excellence since <span>2023</span></p>
+      <p>At Felix IT's, we believe in equipping our students with the cutting-edge skills required in today's tech-centric world. Our expert trainers ensure that every individual gains hands-on experience to tackle real-world challenges.</p>
+      <p>Our specialties include Full-Stack and UI/UX training, ensuring that our trainees are industry-ready from day one. Dive into our meticulously crafted courses and emerge as a tech maven ready to innovate and impress.</p>
+  </article>
+</section>
+
+<!-- JavaScript/jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+/* ... Your existing styles ... */
+
+/* Stylish Navbar */
+.navbar {
+    background: linear-gradient(45deg, #6C5B7B, #C06C84, #F67280); /* Gradient background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+ 
+}
+
+.navbar-brand:hover {
+    color: #F8B195; /* Light peach color on hover */
+    text-decoration: none; /* Remove the underline on hover */
+}
+
+/* Stylish Hand-Hoverable Buttons */
+.nav-item .btn {
+    transition: transform 0.3s ease;
+    border-radius: 30px; /* Rounded corners for the buttons */
+    overflow: hidden;   /* Ensures the background transition only affects the button */
+}
+
+.nav-item .btn:hover {
+    cursor: pointer;  /* Changes cursor to hand symbol on hover */
+    transform: scale(1.1);  /* Scales the button slightly to make it pop on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* On hover, buttons will have a slightly darker shade */
+.nav-item .btn:hover:not(.blue-theme-btn, .indigo-theme-btn, .red-theme-btn) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.blue-theme-btn:hover,
+.indigo-theme-btn:hover,
+.red-theme-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav a {
+    font-weight: bold;
+}
+
+.navbar-brand {
+    color: whitesmoke !important;
+}
+
+body.red-theme {
+    background-color: #FF0000;
+    color: #ffffff;
+}
+
+body.red-theme .navbar {
+    background: linear-gradient(45deg, #FF4E50, #F9D423);
+}
+body.red-theme .blog-post {
+    color: #ffffff;
+}
+
+body.orange-theme {
+    background-color: #FF7F00;
+    color: #ffffff;
+}
+
+body.orange-theme .navbar {
+    background: linear-gradient(45deg, #FF4E50, #FC913A);
+}
+body.orange-theme .blog-post {
+    color: #ffffff;
+}
+
+body.yellow-theme {
+    background-color: #FFFF00;
+    color: #000000;
+}
+
+body.yellow-theme .navbar {
+    background: linear-gradient(45deg, #F9D423, #EDE574);
+}
+body.yellow-theme .blog-post {
+    color: #000000;
+}
+
+body.green-theme {
+    background-color: #7FFF00;
+    color: #000000;
+}
+
+body.green-theme .navbar {
+    background: linear-gradient(45deg, #56ab2f, #a8e063);
+}
+body.green-theme .blog-post {
+    color: #ffffff;
+}
+
+body.blue-theme {
+    background-color: #0000FF;
+    color: #ffffff;
+}
+
+body.blue-theme .navbar {
+    background: linear-gradient(45deg, #2980b9, #6dd5fa);
+}
+body.blue-theme .blog-post {
+    color: #ffffff;
+}
+
+
+body.indigo-theme {
+    background-color: #4B0082;
+    color: #ffffff;
+}
+
+body.indigo-theme .navbar {
+    background: linear-gradient(45deg, #3f5efb, #fc466b);
+}
+body.indigo-theme .blog-post {
+    color: #ffffff;
+}
+
+body.violet-theme {
+    background-color: #9400D3;
+    color: #ffffff;
+}
+
+body.violet-theme .navbar {
+    background: linear-gradient(45deg, #8a2387, #e94057, #f27121);
+}
+body.violet-theme .blog-post {
+    color: #ffffff;
+}
+
+.red-theme-btn {
+    background-color: #FF0000;
+    color:whitesmoke;
+}
+
+.orange-theme-btn {
+    background-color: #FF7F00;
+}
+.yellow-theme-btn {
+    background-color: #FFFF00;
+}
+.green-theme-btn {
+    background-color: #7FFF00;
+}
+.blue-theme-btn {
+    background-color: #0000FF;
+    color:whitesmoke;
+}
+.indigo-theme-btn {
+    background-color: #4B0082;
+    color:whitesmoke;
+}
+.violet-theme-btn {
+    background-color: #9400D3;
+    color:whitesmoke;
+}
+
+.nav-item .btn {
+    width: 90px;  /* Uniform button size */
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.blog-post h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.date {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5); /* A lighter shade of text color for the date */
+}
+
+
+/* Red Theme Font Color */
+body.red-theme, 
+body.red-theme .blog-post,
+body.red-theme .blog-post h2,
+body.red-theme .navbar-brand,
+body.red-theme .date {
+    color:whitesmoke;  /* Bright yellow for contrast */
+}
+
+/* Orange Theme Font Color */
+body.orange-theme,
+body.orange-theme .blog-post,
+body.orange-theme .blog-post h2,
+body.orange-theme .navbar-brand,
+body.orange-theme .date {
+    color: #554348;  /* Off-white for contrast */
+}
+
+/* Yellow Theme Font Color */
+body.yellow-theme,
+body.yellow-theme .blog-post,
+body.yellow-theme .blog-post h2,
+body.yellow-theme .navbar-brand,
+body.yellow-theme .date {
+    color: #000000;  /* Black for contrast */
+}
+
+/* Green Theme Font Color */
+body.green-theme,
+body.green-theme .blog-post,
+body.green-theme .blog-post h2,
+body.green-theme .navbar-brand,
+body.green-theme .date {
+    color: #b01212;  /* Almost black for contrast */
+}
+
+/* Blue Theme Font Color */
+body.blue-theme,
+body.blue-theme .blog-post,
+body.blue-theme .blog-post h2,
+body.blue-theme .navbar-brand,
+body.blue-theme .date {
+    color: #ffe600;  /* Bright yellow for contrast */
+}
+
+/* Indigo Theme Font Color */
+body.indigo-theme,
+body.indigo-theme .blog-post,
+body.indigo-theme .blog-post h2,
+body.indigo-theme .navbar-brand,
+body.indigo-theme .date {
+    color: #FFC107;  /* Bright amber for contrast */
+}
+
+/* Violet Theme Font Color */
+body.violet-theme,
+body.violet-theme .blog-post,
+body.violet-theme .blog-post h2,
+body.violet-theme .navbar-brand,
+body.violet-theme .date {
+    color: #120340;  /* Bright yellow for contrast */
+}
+
+
+
+
+
